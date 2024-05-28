@@ -1,0 +1,99 @@
+/* Container */
+.container {
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* NavBar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1e1e2f;
+    color: white;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.search input {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 200px;
+    transition: width 0.3s;
+}
+
+.search input:focus {
+    width: 300px;
+}
+
+/* Main Content */
+.mainContent {
+    display: flex;
+    padding: 20px;
+    flex: 1;
+}
+
+/* Menu Vertical */
+.menuVertical {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.button {
+    margin-top: 5px;
+    margin-bottom: 8px;
+    padding: 10px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #005bb5;
+}
+
+/* Lista de Músicas */
+.listaMusicas {
+    flex-grow: 1;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.song_item {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.song_item:hover {
+    transform: translateY(-5px);
+}
+
+.song_title {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.error {
+    color: red;
+}
